@@ -32,7 +32,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 # Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="n", intents=intents)
+bot = commands.Bot(command_prefix="h", intents=intents)
 
 # Guild ID (adjust if you want)
 GUILD_ID = 1030603151033769994
@@ -308,7 +308,7 @@ class MusicControls(discord.ui.View):
 @bot.event
 async def on_ready():
     logging.info(f"✅ Bot online as {bot.user}")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Baseball"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="a kinda average baseball game"))
     await bot.tree.sync(guild=GUILD_OBJ)
     bot.add_view(MusicControls())
 
