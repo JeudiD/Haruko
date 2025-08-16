@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 # Load env
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
-if not music_token:
+if not token:
     raise ValueError("🚨 DISCORD_TOKEN not found in environment variables.")
 
 spotify_client_id = os.getenv("SPOTIFY_CLIENT_ID")
