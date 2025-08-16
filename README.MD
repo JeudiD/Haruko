@@ -33,9 +33,9 @@ It is currently configured for personal server use but can be customized for any
 
 ## Attribution
 
-If you use or modify this bot, a mention or shout-out is appreciated but not required.
+If you use or modify this bot, a simple shout-out or mention would be appreciated but is not required. Thanks for supporting my work!
 
-# Steps of Bot Creation (Music-Specific)
+# Steps of Bot Creation 
 
 # 1. Prepared Project Environment
 - Installed discord.py, yt-dlp, and FFmpeg.
