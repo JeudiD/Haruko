@@ -81,3 +81,36 @@ If you use or modify this bot, a simple shout-out or mention would be appreciate
 
 # 13. Fixed Voice Session Errors
 - Updated to discord.py master branch for port handling bug fix.
+
+# 14. Queue Pagination Fix
+- Added proper page tracking for the queue UI.
+- Queue now correctly shows pages starting at 1/1 instead of 0/0.
+- Left (⬅️) and right (➡️) page buttons work independently without resetting to the first page.
+
+# 15. Queue UI Controls
+- Moved queue-specific buttons (pagination, clear queue) to the queue UI instead of the player UI.
+- Clear queue button now only affects the queue embed.
+
+# 16. Clear Queue Behavior
+- Clearing the queue resets the queue page to 1.
+- Queue embed updates immediately to reflect an empty queue.
+
+# 17. Now Playing Embed When Idle
+- Now Playing embed now shows "Not currently playing anything" when the player is idle.
+- Prevents misleading display of previous songs when playback stops.
+
+# 18. Slash Command Interaction Feedback
+- /play command ephemeral response changed from 🎧 to 🔍 emoji.
+- Provides clear visual cue that the bot is searching/processing.
+
+# 19. Player Volume & Repeat State Updates
+Embed updates now correctly reflect volume and repeat mode in real time.
+Changes triggered via buttons immediately update the player embed.
+
+# 20. General UI Persistence
+Both player and queue embeds persist in chat after song ends.
+Ensures users can still view queue and last played info without misleading "Now Playing" data.
+
+# 21. Removed Queue Command
+The manual queue command (both prefix and slash) was removed.
+The queue embed is now persistent and updates automatically, so the command is no longer necessary.
